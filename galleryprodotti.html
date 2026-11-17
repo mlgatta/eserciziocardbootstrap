@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Esercizio 1x07 Bootstrap – Gallery e-commerce</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+	<style>
+		.card {
+			height: 100%;
+		}
+		
+		.card-title {
+			text-align: center;
+		}
+		
+		.card-text {
+			text-align: center;
+		}
+		
+		.riga-acquisto {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.prezzo {
+			text-align: left;
+		}
+		
+		.dettagli {
+			text-align: center;
+		}
+		
+		.carrello {
+			text-align: right;
+		}
+		.btn btn-primary carrello {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="row g-2"> <!-- col-md-4 col-md-sm-12 3 card affiancate su PC, 1 sotto l'altra su smartphone -->
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517396-adidas-scarpe-adizero-evo-sl-woven-w-kz9023-6_800x.jpg?v=1780664480" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ADIDAS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe Donna Adizero EVO SL</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€120,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98518117-asics-scarpe-dynablast-6-w-1012c010-250_800x.jpg?v=1783071682" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ASICS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe donna Dynablast 6</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€104,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517957-puma-scarpe-velociy-nitro-5-w-312945-05_800x.jpg?v=1784285187" alt="Scarpe Donna Velocity Nitro 5" />
+				<div class="card-body">
+					<h5 class="card-title">PUMA</h5> 
+					<p class="card-text">Scarpe Donna Velocity Nitro 5</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€91,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517396-adidas-scarpe-adizero-evo-sl-woven-w-kz9023-6_800x.jpg?v=1780664480" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ADIDAS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe Donna Adizero EVO SL</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€120,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98518117-asics-scarpe-dynablast-6-w-1012c010-250_800x.jpg?v=1783071682" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ASICS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe donna Dynablast 6</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€104,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517957-puma-scarpe-velociy-nitro-5-w-312945-05_800x.jpg?v=1784285187" alt="Scarpe Donna Velocity Nitro 5" />
+				<div class="card-body">
+					<h5 class="card-title">PUMA</h5> 
+					<p class="card-text">Scarpe Donna Velocity Nitro 5</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€91,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row g-2"> <!-- col-md-4 col-md-sm-12 3 card affiancate su PC, 1 sotto l'altra su smartphone -->
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517396-adidas-scarpe-adizero-evo-sl-woven-w-kz9023-6_800x.jpg?v=1780664480" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ADIDAS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe Donna Adizero EVO SL</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€120,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98518117-asics-scarpe-dynablast-6-w-1012c010-250_800x.jpg?v=1783071682" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ASICS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe donna Dynablast 6</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€104,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517957-puma-scarpe-velociy-nitro-5-w-312945-05_800x.jpg?v=1784285187" alt="Scarpe Donna Velocity Nitro 5" />
+				<div class="card-body">
+					<h5 class="card-title">PUMA</h5> 
+					<p class="card-text">Scarpe Donna Velocity Nitro 5</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€91,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517396-adidas-scarpe-adizero-evo-sl-woven-w-kz9023-6_800x.jpg?v=1780664480" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ADIDAS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe Donna Adizero EVO SL</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€120,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98518117-asics-scarpe-dynablast-6-w-1012c010-250_800x.jpg?v=1783071682" alt="Scarpe Donna Adizero EVO SL" />
+				<div class="card-body">
+					<h5 class="card-title">ASICS</h5> <!-- titolo della card -->
+					<p class="card-text">Scarpe donna Dynablast 6</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€104,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3 col-xl-2"> 
+			<div class="card">
+				<img class="card-img-top" src="https://df-sportspecialist.it/cdn/shop/files/98517957-puma-scarpe-velociy-nitro-5-w-312945-05_800x.jpg?v=1784285187" alt="Scarpe Donna Velocity Nitro 5" />
+				<div class="card-body">
+					<h5 class="card-title">PUMA</h5> 
+					<p class="card-text">Scarpe Donna Velocity Nitro 5</p> 
+					<div class="riga-acquisto">
+						<h5 class="card-text" id="prezzo">€91,00</h5>
+						<a href="#" class="btn btn-primary" id="dettagli">Dettagli</a>
+						<a href="#" class="btn btn-primary" id="carrello">Aggiungi al carrello</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
